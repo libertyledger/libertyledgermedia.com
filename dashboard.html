@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Dashboard - Liberty Ledger Media</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: #000000;
+            border-bottom: 4px solid #DAA520;
+            padding: 0;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        
+        .logo {
+            color: #DAA520;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #DAA520;
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            color: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: #DAA520;
+            margin-bottom: 1rem;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+        }
+        
+        /* Dashboard Container */
+        .dashboard-container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .dashboard-intro {
+            background: #f5f5f5;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 5px solid #DAA520;
+        }
+        
+        .dashboard-intro h2 {
+            color: #000;
+            margin-bottom: 1rem;
+        }
+        
+        .dashboard-intro p {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Dashboard Embed */
+        .dashboard-embed {
+            background: #fff;
+            border: 2px solid #DAA520;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+        
+        .dashboard-embed iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+        }
+        
+        .external-link {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .external-link a {
+            display: inline-block;
+            background: #DAA520;
+            color: #000;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .external-link a:hover {
+            background: #FFD700;
+        }
+        
+        /* Footer */
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            border-top: 4px solid #DAA520;
+            margin-top: 4rem;
+        }
+        
+        footer a {
+            color: #DAA520;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: #FFD700;
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .dashboard-embed iframe {
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">LIBERTY LEDGER</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="dashboard.html">Live Dashboard</a></li>
+                <li><a href="blog.html">Reports</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Live Government Agenda Dashboard</h1>
+        <p>Real-time monitoring of 4 jurisdictions, 35+ sources</p>
+    </section>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-container">
+        <div class="dashboard-intro">
+            <h2>What You're Seeing</h2>
+            <p>
+                This dashboard displays all government agendas currently being monitored by our 
+                AI-powered systems. Data is updated automatically every morning and includes:
+            </p>
+            <ul style="margin: 1rem 0 0 2rem;">
+                <li><strong>Texarkana, Texas</strong> - City government meetings and agendas</li>
+                <li><strong>Texarkana, Arkansas</strong> - City government meetings and agendas</li>
+                <li><strong>Bowie County, Texas</strong> - Commissioners court and county business</li>
+                <li><strong>Miller County, Arkansas</strong> - Quorum court and county business</li>
+            </ul>
+            <p style="margin-top: 1rem;">
+                <strong>Total Sources Monitored:</strong> 35+ government agenda feeds<br>
+                <strong>Last Updated:</strong> Daily at 8:00 AM CST<br>
+                <strong>Historical Archive:</strong> All data preserved for investigation
+            </p>
+        </div>
+
+        <!-- Embedded Dashboard -->
+        <div class="dashboard-embed">
+            <iframe 
+                src="https://libertyledger.github.io/agenda-dashboard/agendas_dashboard.html"
+                title="Government Agenda Dashboard"
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <!-- External Link -->
+        <div class="external-link">
+            <a href="https://libertyledger.github.io/agenda-dashboard/agendas_dashboard.html" target="_blank">
+                Open Dashboard in New Window →
+            </a>
+        </div>
+
+        <!-- Additional Info -->
+        <div class="dashboard-intro">
+            <h2>How to Use This Dashboard</h2>
+            <p>
+                <strong>Click any agenda link</strong> to view the full meeting agenda or minutes.<br>
+                <strong>Check daily</strong> for new government meetings and decisions.<br>
+                <strong>Report tips</strong> if you notice something concerning - <a href="contact.html" style="color: #DAA520;">contact us</a>.
+            </p>
+            <p style="margin-top: 1rem;">
+                This is transparency in action. Every agenda, every meeting, every government 
+                action - tracked and publicly accessible.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Liberty Ledger Media | <a href="contact.html">Contact Us</a></p>
+        <p><em>Government Accountability Through Technology-Enabled Journalism</em></p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            Veteran-Owned | Mission-Driven | Technology-Enabled
+        </p>
+    </footer>
+</body>
+</html>
+
