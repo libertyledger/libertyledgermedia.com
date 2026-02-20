@@ -17,7 +17,6 @@
             color: #333;
         }
         
-        /* Header & Navigation */
         header {
             background: #000000;
             border-bottom: 4px solid #DAA520;
@@ -58,7 +57,6 @@
             color: #DAA520;
         }
         
-        /* Page Header */
         .page-header {
             background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
             color: #fff;
@@ -76,7 +74,6 @@
             font-size: 1.2rem;
         }
         
-        /* Dashboard Container */
         .dashboard-container {
             max-width: 1400px;
             margin: 2rem auto;
@@ -100,7 +97,32 @@
             margin-bottom: 0.5rem;
         }
         
-        /* Dashboard Embed */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 2px solid #DAA520;
+            text-align: center;
+        }
+        
+        .stat-card h3 {
+            font-size: 2.5rem;
+            color: #DAA520;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
         .dashboard-embed {
             background: #fff;
             border: 2px solid #DAA520;
@@ -135,7 +157,6 @@
             background: #FFD700;
         }
         
-        /* Footer */
         footer {
             background: #000;
             color: #fff;
@@ -154,7 +175,6 @@
             color: #FFD700;
         }
         
-        /* Mobile */
         @media (max-width: 768px) {
             .page-header h1 {
                 font-size: 2rem;
@@ -177,7 +197,6 @@
     </style>
 </head>
 <body>
-    <!-- Header & Navigation -->
     <header>
         <nav>
             <a href="index.html" class="logo">LIBERTY LEDGER</a>
@@ -191,34 +210,76 @@
         </nav>
     </header>
 
-    <!-- Page Header -->
     <section class="page-header">
         <h1>Live Government Agenda Dashboard</h1>
-        <p>Real-time monitoring of 4 jurisdictions, 35+ sources</p>
+        <p>Real-time monitoring of 4 jurisdictions, 75+ sources including JavaScript portals</p>
     </section>
 
-    <!-- Dashboard Content -->
     <div class="dashboard-container">
         <div class="dashboard-intro">
-            <h2>What You're Seeing</h2>
+            <h2>AI-Powered Government Monitoring</h2>
             <p>
-                This dashboard displays all government agendas currently being monitored by our 
-                AI-powered systems. Data is updated automatically every morning and includes:
+                Our advanced monitoring systems track government meetings across the Texarkana region using both traditional web scraping and cutting-edge browser automation to access JavaScript-heavy portals that other outlets cannot monitor.
             </p>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>75+</h3>
+                <p>Total Agendas Monitored</p>
+            </div>
+            <div class="stat-card">
+                <h3>4</h3>
+                <p>Jurisdictions Covered</p>
+            </div>
+            <div class="stat-card">
+                <h3>24/7</h3>
+                <p>Automated Monitoring</p>
+            </div>
+            <div class="stat-card">
+                <h3>100%</h3>
+                <p>Transparency Commitment</p>
+            </div>
+        </div>
+
+        <div class="dashboard-intro">
+            <h2>Coverage Areas</h2>
             <ul style="margin: 1rem 0 0 2rem;">
-                <li><strong>Texarkana, Texas</strong> - City government meetings and agendas</li>
-                <li><strong>Texarkana, Arkansas</strong> - City government meetings and agendas</li>
-                <li><strong>Bowie County, Texas</strong> - Commissioners court and county business</li>
-                <li><strong>Miller County, Arkansas</strong> - Quorum court and county business</li>
+                <li><strong>Texarkana, Texas (35 sources)</strong>
+                    <ul style="margin-left: 2rem;">
+                        <li>City Council meetings & agendas (CivicClerk portal)</li>
+                        <li>Planning & Zoning Commission</li>
+                        <li>Building & Standards Commission</li>
+                    </ul>
+                </li>
+                <li><strong>Texarkana, Arkansas (20 sources)</strong>
+                    <ul style="margin-left: 2rem;">
+                        <li>Board of Directors meetings (Municode portal)</li>
+                        <li>Boards & Commissions</li>
+                        <li>Public notices & agendas</li>
+                    </ul>
+                </li>
+                <li><strong>Bowie County, Texas (12 sources)</strong>
+                    <ul style="margin-left: 2rem;">
+                        <li>Commissioners Court</li>
+                        <li>County business & contracts</li>
+                    </ul>
+                </li>
+                <li><strong>Miller County, Arkansas (8 sources)</strong>
+                    <ul style="margin-left: 2rem;">
+                        <li>Quorum Court</li>
+                        <li>County meetings & decisions</li>
+                    </ul>
+                </li>
             </ul>
             <p style="margin-top: 1rem;">
-                <strong>Total Sources Monitored:</strong> 35+ government agenda feeds<br>
-                <strong>Last Updated:</strong> Daily at 8:00 AM CST<br>
+                <strong>Update Frequency:</strong> Daily at 8:00 AM CST<br>
+                <strong>Technology:</strong> Browser automation + traditional scraping<br>
                 <strong>Historical Archive:</strong> All data preserved for investigation
             </p>
         </div>
 
-        <!-- Embedded Dashboard -->
         <div class="dashboard-embed">
             <iframe 
                 src="https://libertyledger.github.io/agenda-dashboard/agendas_dashboard.html"
@@ -227,14 +288,12 @@
             </iframe>
         </div>
 
-        <!-- External Link -->
         <div class="external-link">
             <a href="https://libertyledger.github.io/agenda-dashboard/agendas_dashboard.html" target="_blank">
                 Open Dashboard in New Window →
             </a>
         </div>
 
-        <!-- Additional Info -->
         <div class="dashboard-intro">
             <h2>How to Use This Dashboard</h2>
             <p>
@@ -244,12 +303,12 @@
             </p>
             <p style="margin-top: 1rem;">
                 This is transparency in action. Every agenda, every meeting, every government 
-                action - tracked and publicly accessible.
+                action - tracked and publicly accessible. Our systems monitor portals that traditional 
+                news outlets cannot access, ensuring complete coverage of local government.
             </p>
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Liberty Ledger Media | <a href="contact.html">Contact Us</a></p>
         <p><em>Government Accountability Through Technology-Enabled Journalism</em></p>
@@ -259,4 +318,3 @@
     </footer>
 </body>
 </html>
-

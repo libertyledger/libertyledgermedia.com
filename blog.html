@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Liberty Ledger Media</title>
+    <title>Reports - Liberty Ledger Media</title>
     <style>
         * {
             margin: 0;
@@ -17,7 +17,6 @@
             color: #333;
         }
         
-        /* Header & Navigation */
         header {
             background: #000000;
             border-bottom: 4px solid #DAA520;
@@ -58,7 +57,6 @@
             color: #DAA520;
         }
         
-        /* Page Header */
         .page-header {
             background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
             color: #fff;
@@ -76,93 +74,84 @@
             font-size: 1.2rem;
         }
         
-        /* Content */
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 3rem 2rem;
         }
         
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
+        .coming-soon {
+            background: #f5f5f5;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 5px solid #DAA520;
             margin: 2rem 0;
         }
         
-        .contact-card {
-            background: #f5f5f5;
-            padding: 2rem;
-            border-radius: 8px;
-            border-left: 5px solid #DAA520;
-        }
-        
-        .contact-card h2 {
-            font-size: 1.8rem;
+        .coming-soon h2 {
             color: #000;
             margin-bottom: 1rem;
+            font-size: 2rem;
         }
         
-        .contact-card p {
+        .coming-soon p {
             font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .contact-card a {
-            color: #DAA520;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        .contact-card a:hover {
-            color: #FFD700;
-        }
-        
-        .contact-methods {
-            margin: 2rem 0;
-        }
-        
-        .method {
-            background: #fff;
-            padding: 1.5rem;
             margin-bottom: 1.5rem;
+        }
+        
+        .status-update {
+            background: #fff;
+            padding: 2rem;
             border-radius: 8px;
             border: 2px solid #DAA520;
-        }
-        
-        .method h3 {
-            font-size: 1.3rem;
-            color: #DAA520;
-            margin-bottom: 0.5rem;
-        }
-        
-        .method p {
-            font-size: 1.05rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .tips-box {
-            background: #fff9e6;
-            padding: 2rem;
-            border-radius: 8px;
-            border-left: 5px solid #DAA520;
             margin: 2rem 0;
         }
         
-        .tips-box h2 {
-            color: #000;
+        .status-update h3 {
+            color: #DAA520;
             margin-bottom: 1rem;
         }
         
-        .tips-box ul {
+        .status-update ul {
             margin-left: 2rem;
+            margin-top: 1rem;
         }
         
-        .tips-box li {
+        .status-update li {
             margin-bottom: 0.5rem;
         }
         
-        /* Footer */
+        .cta-box {
+            background: #000;
+            color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .cta-box h3 {
+            color: #DAA520;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-box a {
+            display: inline-block;
+            background: #DAA520;
+            color: #000;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+            margin-top: 1rem;
+        }
+        
+        .cta-box a:hover {
+            background: #FFD700;
+        }
+        
         footer {
             background: #000;
             color: #fff;
@@ -181,7 +170,6 @@
             color: #FFD700;
         }
         
-        /* Mobile */
         @media (max-width: 768px) {
             .page-header h1 {
                 font-size: 2rem;
@@ -200,7 +188,6 @@
     </style>
 </head>
 <body>
-    <!-- Header & Navigation -->
     <header>
         <nav>
             <a href="index.html" class="logo">LIBERTY LEDGER</a>
@@ -214,117 +201,90 @@
         </nav>
     </header>
 
-    <!-- Page Header -->
     <section class="page-header">
-        <h1>Contact Us</h1>
-        <p>Tips, Questions, and Story Ideas Welcome</p>
+        <h1>Investigative Reports</h1>
+        <p>In-depth accountability journalism for the Texarkana region</p>
     </section>
 
-    <!-- Content -->
     <div class="container">
-        <!-- Primary Contact -->
-        <div class="contact-card">
-            <h2>Brandon Cowan - Founder & Editor-in-Chief</h2>
-            <p><strong>Email:</strong> <a href="mailto:libertyledgermedia@gmail.com">libertyledgermedia@gmail.com</a></p>
-            <p><strong>Phone:</strong> <a href="tel:903-244-7535">903-244-7535</a></p>
-            <p style="margin-top: 1rem; font-size: 0.95rem; color: #666;">
-                Response time: We respond to all inquiries within 48 hours.
-            </p>
-        </div>
-
-        <!-- Contact Methods -->
-        <div class="contact-methods">
-            <div class="method">
-                <h3>📧 General Inquiries</h3>
-                <p><a href="mailto:libertyledgermedia@gmail.com">libertyledgermedia@gmail.com</a></p>
-                <p style="font-size: 0.95rem; color: #666;">
-                    For general questions, partnership opportunities, speaking requests, 
-                    or media inquiries.
-                </p>
-            </div>
-
-            <div class="method">
-                <h3>💡 Tips & Story Ideas</h3>
-                <p><a href="mailto:libertyledgermedia@gmail.com">libertyledgermedia@gmail.com</a></p>
-                <p style="font-size: 0.95rem; color: #666;">
-                    Have a tip about government wrongdoing? See something newsworthy? 
-                    We investigate all credible leads. Confidentiality respected.
-                </p>
-            </div>
-
-            <div class="method">
-                <h3>📱 Phone</h3>
-                <p><a href="tel:903-244-7535">903-244-7535</a></p>
-                <p style="font-size: 0.95rem; color: #666;">
-                    For urgent matters or sensitive tips that require immediate attention.
-                </p>
-            </div>
-
-            <div class="method">
-                <h3>📘 Social Media</h3>
-                <p>
-                    Facebook: <a href="https://www.facebook.com/profile.php?id=61571590345932" target="_blank">The Liberty Ledger</a>
-                </p>
-                <p style="font-size: 0.95rem; color: #666;">
-                    Follow us for daily updates, breaking news, and behind-the-scenes 
-                    looks at our investigations.
-                </p>
-            </div>
-        </div>
-
-        <!-- Tips Box -->
-        <div class="tips-box">
-            <h2>Submitting Tips Safely</h2>
+        <div class="coming-soon">
+            <h2>📰 Reports Coming Soon</h2>
             <p>
-                <strong>Liberty Ledger Media</strong> takes source protection seriously. 
-                If you have sensitive information:
+                Our investigative team is currently building out our reporting infrastructure 
+                and will begin publishing accountability investigations in the coming weeks.
             </p>
-            <ul style="margin-top: 1rem;">
-                <li>Use a non-work email or phone when contacting us</li>
-                <li>Do not use your employer's network or devices</li>
-                <li>Consider using encrypted communication (we can provide guidance)</li>
-                <li>We never reveal sources without explicit permission</li>
-                <li>We will work with you to protect your identity</li>
-            </ul>
-            <p style="margin-top: 1rem;">
-                <strong>Anonymous tip system coming soon.</strong> We're building encrypted 
-                submission tools to ensure maximum source protection.
+            <p style="font-size: 0.95rem; color: #666;">
+                We're not just another news aggregator—we're building something different. 
+                Deep investigations take time to do right.
             </p>
         </div>
 
-        <!-- What We're Looking For -->
-        <div class="contact-card">
-            <h2>What We Investigate</h2>
-            <p>We're interested in tips about:</p>
-            <ul style="margin: 1rem 0 0 2rem;">
-                <li>Government contracts (especially no-bid or questionable awards)</li>
-                <li>Conflicts of interest among officials</li>
-                <li>Wasteful spending or budget irregularities</li>
-                <li>Civil rights violations</li>
-                <li>Law enforcement misconduct</li>
-                <li>Campaign finance violations</li>
-                <li>Public records being withheld improperly</li>
-                <li>Corruption, fraud, or abuse of power</li>
-            </ul>
-            <p style="margin-top: 1rem;">
-                <strong>Every credible tip is investigated.</strong> We don't drop stories.
+        <div class="status-update">
+            <h3>🔧 What We're Building Right Now</h3>
+            <p>
+                Liberty Ledger Media is in active development. Here's what's operational:
             </p>
+            <ul>
+                <li><strong>✅ AI-Powered Monitoring System</strong> - Tracking 75+ government agendas daily</li>
+                <li><strong>✅ Browser Automation</strong> - Accessing JavaScript portals other outlets can't monitor</li>
+                <li><strong>✅ Live Dashboard</strong> - Real-time transparency portal (see Dashboard page)</li>
+                <li><strong>✅ Historical Archive</strong> - Every agenda preserved for investigation</li>
+                <li><strong>🔄 AI Analysis Engine</strong> - Flagging newsworthy items automatically</li>
+                <li><strong>🔄 Investigation Queue</strong> - Building our first major reports</li>
+            </ul>
         </div>
 
-        <!-- Mailing Address -->
-        <div class="contact-card">
-            <h2>Mailing Address</h2>
-            <p><em>Physical address coming soon upon LLC formation.</em></p>
-            <p style="margin-top: 1rem;">
-                <strong>Service Area:</strong> Texarkana, Texas & Arkansas<br>
-                Bowie County, Texas | Miller County, Arkansas
+        <div class="status-update">
+            <h3>📋 What You'll Find Here Soon</h3>
+            <p>Once we launch our reporting operation, this page will feature:</p>
+            <ul>
+                <li><strong>Government Contract Analysis</strong> - No-bid contracts, conflicts of interest, unusual spending</li>
+                <li><strong>Meeting Coverage</strong> - Key decisions from City Council, Commissioners Court, and more</li>
+                <li><strong>Budget Investigations</strong> - Where your tax dollars actually go</li>
+                <li><strong>Public Records Requests</strong> - Documents obtained through FOIA</li>
+                <li><strong>Civil Rights Documentation</strong> - Violations, complaints, and accountability</li>
+                <li><strong>Data Journalism</strong> - Visual analysis of government patterns and trends</li>
+            </ul>
+        </div>
+
+        <div class="cta-box">
+            <h3>Want to Be Notified When We Publish?</h3>
+            <p style="margin-bottom: 0;">
+                We'll be launching our first investigations soon. Get in touch to stay updated.
+            </p>
+            <a href="contact.html">Contact Us →</a>
+        </div>
+
+        <div class="status-update">
+            <h3>🎯 Our Reporting Philosophy</h3>
+            <p>
+                When we publish, you can expect:
+            </p>
+            <ul>
+                <li><strong>Evidence-Based</strong> - Every claim backed by documents and data</li>
+                <li><strong>Non-Partisan</strong> - We follow the facts, not political agendas</li>
+                <li><strong>Source Protection</strong> - Whistleblowers can trust us</li>
+                <li><strong>Transparency</strong> - We show our work and link to original documents</li>
+                <li><strong>Accountability</strong> - We correct errors publicly and promptly</li>
+            </ul>
+        </div>
+
+        <div class="coming-soon" style="margin-top: 3rem;">
+            <h2>💡 Have a Tip?</h2>
+            <p>
+                If you've witnessed government waste, fraud, abuse, or civil rights violations, 
+                we want to hear from you.
+            </p>
+            <p style="font-size: 0.95rem;">
+                <a href="contact.html" style="color: #DAA520; text-decoration: underline;">
+                    Submit a confidential tip →
+                </a>
             </p>
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Liberty Ledger Media | <a href="mailto:libertyledgermedia@gmail.com">libertyledgermedia@gmail.com</a></p>
+        <p>&copy; 2026 Liberty Ledger Media | <a href="contact.html">Contact Us</a></p>
         <p><em>Government Accountability Through Technology-Enabled Journalism</em></p>
         <p style="margin-top: 1rem; font-size: 0.9rem;">
             Veteran-Owned | Mission-Driven | Technology-Enabled
@@ -332,4 +292,3 @@
     </footer>
 </body>
 </html>
-
