@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mission - Liberty Ledger Media</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: #000000;
+            border-bottom: 4px solid #DAA520;
+            padding: 0;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        
+        .logo {
+            color: #DAA520;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #DAA520;
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            color: #DAA520;
+            margin-bottom: 1rem;
+        }
+        
+        .page-header p {
+            font-size: 1.3rem;
+            font-style: italic;
+        }
+        
+        /* Content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section h2 {
+            font-size: 2rem;
+            color: #000;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #DAA520;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section h3 {
+            font-size: 1.5rem;
+            color: #000;
+            margin: 2rem 0 1rem;
+        }
+        
+        .section p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .section ul, .section ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section li {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        
+        .pillars {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .pillar {
+            background: #f5f5f5;
+            padding: 2rem;
+            border-left: 5px solid #DAA520;
+            border-radius: 5px;
+        }
+        
+        .pillar h3 {
+            color: #DAA520;
+            margin-top: 0;
+        }
+        
+        .escalation-ladder {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .escalation-ladder ol {
+            margin-left: 1.5rem;
+        }
+        
+        .escalation-ladder li {
+            margin-bottom: 1rem;
+            padding-left: 0.5rem;
+        }
+        
+        .highlight-box {
+            background: #fff9e6;
+            border-left: 5px solid #DAA520;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        /* Footer */
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            border-top: 4px solid #DAA520;
+        }
+        
+        footer a {
+            color: #DAA520;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: #FFD700;
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">LIBERTY LEDGER</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="dashboard.html">Live Dashboard</a></li>
+                <li><a href="blog.html">Reports</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Our Mission</h1>
+        <p>Accountability Through Vigilance</p>
+    </section>
+
+    <!-- Content -->
+    <div class="container">
+        <section class="section">
+            <h2>Mission Statement</h2>
+            <p>
+                <strong>Liberty Ledger Media</strong> exists to strengthen democracy through 
+                relentless government accountability. We believe that transparency is not optional—it 
+                is the foundation upon which free societies are built.
+            </p>
+            <p>
+                Using cutting-edge artificial intelligence combined with traditional investigative 
+                journalism, we monitor government actions 24/7 across the Texarkana region and 
+                expose fraud, waste, abuse, and civil rights violations wherever they occur.
+            </p>
+            <div class="highlight-box">
+                <p><strong>"With proper civilian oversight and accountability, we can strengthen our 
+                communities by protecting civil rights and restoring trust in the institutions that 
+                help society function."</strong></p>
+                <p style="text-align: right; margin-top: 1rem;">— Brandon Cowan, Founder</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Three Pillars of Accountability</h2>
+            
+            <div class="pillars">
+                <div class="pillar">
+                    <h3>1. Transparency</h3>
+                    <p>
+                        <strong>Sunlight is the best disinfectant.</strong> We believe every 
+                        government action—every contract, every vote, every dollar spent—should 
+                        be accessible to the citizens it affects.
+                    </p>
+                    <p>
+                        Our AI-powered systems monitor dozens of government sources continuously, 
+                        ensuring that nothing escapes scrutiny. We archive everything, creating 
+                        a permanent public record that cannot be erased or rewritten.
+                    </p>
+                    <p><strong>What we do:</strong></p>
+                    <ul>
+                        <li>Monitor 35+ government agenda sources daily</li>
+                        <li>Archive all public records for historical reference</li>
+                        <li>Publish raw data alongside our reporting</li>
+                        <li>Provide FOIA request templates and training</li>
+                    </ul>
+                </div>
+
+                <div class="pillar">
+                    <h3>2. Investigation</h3>
+                    <p>
+                        <strong>Data reveals patterns; journalism reveals truth.</strong> While 
+                        our technology identifies red flags, human journalists dig deeper—conducting 
+                        interviews, filing FOIA requests, analyzing documents, and holding officials 
+                        accountable face-to-face.
+                    </p>
+                    <p>
+                        We pursue stories that matter: no-bid contracts to political allies, civil 
+                        rights violations, wasteful spending, conflicts of interest, and systemic 
+                        corruption.
+                    </p>
+                    <p><strong>What we do:</strong></p>
+                    <ul>
+                        <li>Investigate AI-flagged newsworthy items</li>
+                        <li>File strategic FOIA requests</li>
+                        <li>Develop confidential sources</li>
+                        <li>Cross-reference data across multiple systems</li>
+                        <li>Publish thoroughly sourced, legally defensible investigations</li>
+                    </ul>
+                </div>
+
+                <div class="pillar">
+                    <h3>3. Empowerment</h3>
+                    <p>
+                        <strong>An informed citizenry is democracy's first line of defense.</strong> 
+                        We don't just report—we educate. Our mission is to empower citizens with 
+                        the knowledge and tools to hold their own government accountable.
+                    </p>
+                    <p>
+                        Through workshops, guides, and community engagement, we train citizens 
+                        in FOIA requests, civic participation, and watchdog journalism.
+                    </p>
+                    <p><strong>What we do:</strong></p>
+                    <ul>
+                        <li>Publish educational resources on government transparency</li>
+                        <li>Conduct FOIA workshops for citizens</li>
+                        <li>Provide templates for public records requests</li>
+                        <li>Offer free access to major investigations</li>
+                        <li>Build tools citizens can use for oversight</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Our Escalation Ladder</h2>
+            <p>
+                <strong>Liberty Ledger operates on a clear escalation model:</strong> We believe 
+                in giving officials the opportunity to do the right thing before exposing wrongdoing 
+                publicly. However, we will not be deterred by stonewalling or intimidation.
+            </p>
+            
+            <div class="escalation-ladder">
+                <ol>
+                    <li>
+                        <strong>Monitor</strong> — Our AI systems track government activity 24/7, 
+                        flagging items of public interest.
+                    </li>
+                    <li>
+                        <strong>Research</strong> — When red flags appear, we investigate further: 
+                        FOIA requests, document analysis, source interviews.
+                    </li>
+                    <li>
+                        <strong>Question</strong> — We reach out to officials for comment, giving 
+                        them the opportunity to explain their actions.
+                    </li>
+                    <li>
+                        <strong>Report</strong> — If concerns remain unanswered or explanations 
+                        are insufficient, we publish our findings with full documentation.
+                    </li>
+                    <li>
+                        <strong>Follow Up</strong> — We don't drop stories. We continue monitoring 
+                        and reporting until accountability is achieved or reform is implemented.
+                    </li>
+                    <li>
+                        <strong>Escalate</strong> — If local accountability fails, we escalate to 
+                        state authorities, partner with larger outlets, or involve legal advocacy 
+                        organizations.
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Editorial Rules & Standards</h2>
+            
+            <h3>Accuracy Above All</h3>
+            <p>
+                Every claim we publish must be thoroughly sourced and legally defensible. We 
+                fact-check aggressively, document meticulously, and correct errors immediately.
+            </p>
+
+            <h3>Independence Always</h3>
+            <p>
+                We accept no government funding, no corporate sponsorships from entities we cover, 
+                and no advertising that could compromise our editorial independence. Our loyalty 
+                is to truth and the public interest—nothing else.
+            </p>
+
+            <h3>Transparency in Everything</h3>
+            <p>
+                We hold ourselves to the same standard we demand of government. Our funding sources, 
+                our methodology, our corrections policy—all are public. We archive our own work 
+                permanently and make raw data available whenever possible.
+            </p>
+
+            <h3>Source Protection</h3>
+            <p>
+                We use encrypted communications, protect confidential sources, and will never 
+                reveal a source's identity without their explicit permission—even under legal 
+                pressure.
+            </p>
+
+            <h3>Fairness to All</h3>
+            <p>
+                Every subject of our reporting receives the opportunity to respond before publication. 
+                We present opposing viewpoints and allow officials to explain their actions. But 
+                fairness does not mean false balance—when the facts are clear, we report them clearly.
+            </p>
+
+            <h3>No Sacred Cows</h3>
+            <p>
+                We hold ALL officials accountable regardless of political party, personal 
+                relationships, or pressure from powerful interests. The law applies equally; 
+                so does our scrutiny.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Why a Veteran Leads This Work</h2>
+            <p>
+                Founder <strong>Brandon Cowan</strong> served two tours in Operation Iraqi Freedom 
+                and one in Operation Enduring Freedom (Afghanistan) as a U.S. Navy Hospital Corpsman. 
+                As a 100% disabled veteran, he has experienced firsthand both the strength of American 
+                institutions when they function properly—and the devastating consequences when 
+                accountability fails.
+            </p>
+            <p>
+                Military service teaches that accountability is not optional. When lives are on 
+                the line, every decision matters. Every leader is responsible. Every system must 
+                function with precision.
+            </p>
+            <p>
+                <strong>That same standard should apply to civilian government.</strong> Taxpayer 
+                money is sacred. Civil rights are non-negotiable. Transparency is not a courtesy—it 
+                is a duty.
+            </p>
+            <p>
+                Liberty Ledger exists because Brandon believes that the oath he took to defend 
+                the Constitution didn't end when he left the military. It continues in this work: 
+                protecting democracy through vigilance, holding power accountable, and ensuring 
+                that government serves the people—not the other way around.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Join the Mission</h2>
+            <p>
+                <strong>Accountability journalism works only with community support.</strong> We 
+                invite you to join us in this mission—whether as a subscriber, a source, a volunteer, 
+                or simply a concerned citizen who believes transparency matters.
+            </p>
+            <p>
+                Together, we can build a region where government operates in the light, where 
+                officials answer to the people they serve, and where democracy is strengthened 
+                through truth.
+            </p>
+            <p>
+                <a href="contact.html" style="color: #DAA520; font-weight: bold;">Contact us</a> 
+                to get involved.
+            </p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Liberty Ledger Media | <a href="contact.html">Contact Us</a></p>
+        <p><em>Government Accountability Through Technology-Enabled Journalism</em></p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            Veteran-Owned | Mission-Driven | Technology-Enabled
+        </p>
+    </footer>
+</body>
+</html>
