@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surveillance Without Consent: The Flock Safety Investigation - Liberty Ledger Media</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #000000;
+            border-bottom: 4px solid #DAA520;
+            padding: 0;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            color: #DAA520;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #DAA520;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            color: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.3rem;
+            color: #DAA520;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+        }
+
+        .page-header .byline {
+            font-size: 1rem;
+            color: #ccc;
+            margin-top: 1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .lede {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .coming-soon {
+            background: #f5f5f5;
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            border-left: 5px solid #DAA520;
+            margin: 2rem 0;
+        }
+
+        .coming-soon h2 {
+            color: #000;
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
+        }
+
+        .status-update {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 2px solid #DAA520;
+            margin: 2rem 0;
+        }
+
+        .status-update h3 {
+            color: #DAA520;
+            margin-bottom: 1rem;
+        }
+
+        .status-update ul {
+            margin-left: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .status-update li {
+            margin-bottom: 0.8rem;
+        }
+
+        .download-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.2rem;
+            margin: 1.5rem 0;
+        }
+
+        .download-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-left: 4px solid #DAA520;
+            border-radius: 6px;
+            padding: 1.3rem 1.5rem;
+        }
+
+        .download-card h4 {
+            color: #000;
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .download-card p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 0.8rem;
+        }
+
+        .download-card a {
+            display: inline-block;
+            background: #000;
+            color: #DAA520;
+            padding: 0.6rem 1.3rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .download-card a:hover {
+            background: #DAA520;
+            color: #000;
+        }
+
+        .response-note {
+            background: #fff;
+            border: 2px dashed #DAA520;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-size: 0.98rem;
+        }
+
+        .cta-box {
+            background: #000;
+            color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .cta-box h3 {
+            color: #DAA520;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box a {
+            display: inline-block;
+            background: #DAA520;
+            color: #000;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+            margin-top: 1rem;
+        }
+
+        .cta-box a:hover {
+            background: #FFD700;
+        }
+
+        .source-links {
+            font-size: 0.95rem;
+        }
+
+        .source-links a {
+            color: #8a6d00;
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            border-top: 4px solid #DAA520;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: #DAA520;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #FFD700;
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 1.7rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" style="display: flex; align-items: center; gap: 1rem; text-decoration: none;">
+                <img src="../logo.png" alt="Liberty Ledger Media" style="height: 80px; width: auto;">
+                <span style="color: #DAA520; font-size: 1.8rem; font-weight: bold; letter-spacing: 1px;">LIBERTY LEDGER</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../mission.html">Mission</a></li>
+                <li><a href="../dashboard.html">Live Dashboard</a></li>
+                <li><a href="../blog.html">Reports</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Surveillance Without Consent</h1>
+        <p>What Texarkana's Own Records Show About Its License Plate Camera System</p>
+        <p class="byline">An investigation by Brandon Cowan | Liberty Ledger Media | DeFlock Texarkana | July 2026</p>
+    </section>
+
+    <div class="container">
+        <p class="lede">
+            Since June 1, 2023, eleven cameras have been tracking every vehicle moving through key parts
+            of Texarkana, Texas. The system photographs your license plate, builds a physical profile of
+            your vehicle, records your GPS location, and checks your plate against federal and state
+            databases &mdash; in real time. City records show that data is shared with a network of more
+            than 800 organizations across 21 or more states.
+        </p>
+        <p>
+            The city council never voted to authorize the contract that built this system. This
+            investigation is based entirely on documents obtained from the City of Texarkana under the
+            Texas Public Information Act, cross-checked against the city's own public agenda records and
+            the written responses of City Manager David Orr and Council Member Jay Davis.
+        </p>
+
+        <div class="status-update">
+            <h3>What the Records Show</h3>
+            <ul>
+                <li><strong>No council vote</strong> on the original 2022 contract &mdash; it was signed administratively by the Chief of Police.</li>
+                <li><strong>A purchasing exemption filed 13 days after</strong> the contract was already signed.</li>
+                <li><strong>A perpetual, irrevocable data license</strong> that survives contract termination, using an anonymization standard the vendor alone controls.</li>
+                <li><strong>An audit requirement</strong> written into department policy that has never been documented as used, in over three years of operation.</li>
+                <li><strong>800+ outside organizations</strong> across 21+ states with access to Texarkana's camera data &mdash; never itemized for the council that approved it.</li>
+            </ul>
+        </div>
+
+        <div class="coming-soon">
+            <h2>Read the Full Investigation</h2>
+            <div class="download-grid">
+                <div class="download-card">
+                    <h4>Full Scholarly Report</h4>
+                    <p>The complete investigation: every finding, the full timeline, contract clause citations, and the appendix of source records. Built for citation, legal, and official use.</p>
+                    <a href="reports/surveillance-without-consent-full-report.pdf">Download the Full Report (PDF)</a>
+                </div>
+                <div class="download-card">
+                    <h4>Short Version</h4>
+                    <p>The same findings in a shorter, plain-language format &mdash; a faster read for residents who want the essentials.</p>
+                    <a href="reports/your-city-has-been-watching-you.pdf">Download the Short Version (PDF)</a>
+                </div>
+                <div class="download-card">
+                    <h4>The City's Response, In Full</h4>
+                    <p>City Manager David Orr and Council Member Jay Davis were given advance notice and the opportunity to respond before publication. Both responses are published here in full, unedited.</p>
+                    <a href="reports/pre-publication-notice-and-city-response.pdf">Read the City's Response (PDF)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="response-note">
+            <strong>A note on fairness:</strong> Every finding in this report is sourced to a specific
+            document produced by the City of Texarkana. Where the City's response disputes a finding, that
+            dispute is noted directly beneath it in the full report &mdash; including places where this
+            investigation corrected its own earlier language after the City's response identified an
+            overstated claim. Readers are encouraged to review the source documents themselves rather than
+            take our word for it.
+        </div>
+
+        <div class="status-update source-links">
+            <h3>Source Documents</h3>
+            <p>All records referenced in this investigation, produced by the City of Texarkana under the Texas Public Information Act, are available for public review:</p>
+            <ul>
+                <li><a href="https://drive.google.com/drive/folders/1O19-etW7aoSdFJl1ouh72U9LeAVwbVo8?usp=drive_link" target="_blank" rel="noopener">Complete records folder &mdash; every document produced in this investigation</a></li>
+            </ul>
+        </div>
+
+        <div class="cta-box">
+            <h3>This Is About You</h3>
+            <p>If you live, work, or drive in Texarkana, this system already applies to you.</p>
+            <a href="../contact.html">Have a tip or a question? Contact us &rarr;</a>
+        </div>
+
+        <p style="text-align: center; font-size: 1.05rem; margin-top: 2rem;">
+            <strong>The Texarkana City Council meets Monday, July 13, 2026 at 6:00 PM.</strong>
+            If you have thoughts after reading, that's where to bring them.
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Liberty Ledger Media | <a href="../contact.html">Contact Us</a></p>
+        <p><em>Government Accountability Through Technology-Enabled Journalism</em></p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            Veteran-Owned | Mission-Driven | Technology-Enabled
+        </p>
+    </footer>
+</body>
+</html>

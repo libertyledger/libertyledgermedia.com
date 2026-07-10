@@ -80,24 +80,51 @@
             padding: 3rem 2rem;
         }
         
-        .coming-soon {
-            background: #f5f5f5;
-            padding: 3rem 2rem;
+        .featured-report {
+            background: #fff;
+            padding: 2.5rem;
             border-radius: 8px;
-            text-align: center;
-            border-left: 5px solid #DAA520;
+            border: 3px solid #DAA520;
             margin: 2rem 0;
         }
         
-        .coming-soon h2 {
+        .featured-report .tag {
+            display: inline-block;
+            background: #DAA520;
             color: #000;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
             margin-bottom: 1rem;
-            font-size: 2rem;
+            letter-spacing: 0.5px;
         }
         
-        .coming-soon p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
+        .featured-report h2 {
+            color: #000;
+            margin-bottom: 1rem;
+            font-size: 1.9rem;
+        }
+        
+        .featured-report p {
+            font-size: 1.05rem;
+            margin-bottom: 1.2rem;
+        }
+        
+        .featured-report a.read-more {
+            display: inline-block;
+            background: #000;
+            color: #DAA520;
+            padding: 0.9rem 1.8rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .featured-report a.read-more:hover {
+            background: #DAA520;
+            color: #000;
         }
         
         .status-update {
@@ -210,20 +237,22 @@
     </section>
 
     <div class="container">
-        <div class="coming-soon">
-            <h2>📰 Reports Coming Soon</h2>
+        <div class="featured-report">
+            <span class="tag">LATEST INVESTIGATION</span>
+            <h2>Surveillance Without Consent: What Texarkana's Flock Safety Records Show</h2>
             <p>
-                Our investigative team is currently building out our reporting infrastructure 
-                and will begin publishing accountability investigations in the coming weeks.
+                Since June 2023, eleven cameras have been tracking every vehicle moving through key parts
+                of Texarkana &mdash; under a contract the city council never voted on. This investigation,
+                based entirely on documents obtained under the Texas Public Information Act, examines the
+                contract, the data-sharing network, and the gaps in oversight. City Manager David Orr and
+                Council Member Jay Davis were given the opportunity to respond before publication; both
+                responses are published in full.
             </p>
-            <p style="font-size: 0.95rem; color: #666;">
-                We're not just another news aggregator—we're building something different. 
-                Deep investigations take time to do right.
-            </p>
+            <a class="read-more" href="flock-investigation.html">Read the Full Investigation &rarr;</a>
         </div>
 
         <div class="status-update">
-            <h3>🔧 What We're Building Right Now</h3>
+            <h3>What We're Building</h3>
             <p>
                 Liberty Ledger Media is in active development. Here's what's operational:
             </p>
@@ -233,27 +262,14 @@
                 <li><strong>✅ Live Dashboard</strong> - Real-time transparency portal (see Dashboard page)</li>
                 <li><strong>✅ Historical Archive</strong> - Every agenda preserved for investigation</li>
                 <li><strong>🔄 AI Analysis Engine</strong> - Flagging newsworthy items automatically</li>
-                <li><strong>🔄 Investigation Queue</strong> - Building our first major reports</li>
-            </ul>
-        </div>
-
-        <div class="status-update">
-            <h3>📋 What You'll Find Here Soon</h3>
-            <p>Once we launch our reporting operation, this page will feature:</p>
-            <ul>
-                <li><strong>Government Contract Analysis</strong> - No-bid contracts, conflicts of interest, unusual spending</li>
-                <li><strong>Meeting Coverage</strong> - Key decisions from City Council, Commissioners Court, and more</li>
-                <li><strong>Budget Investigations</strong> - Where your tax dollars actually go</li>
-                <li><strong>Public Records Requests</strong> - Documents obtained through FOIA</li>
-                <li><strong>Civil Rights Documentation</strong> - Violations, complaints, and accountability</li>
-                <li><strong>Data Journalism</strong> - Visual analysis of government patterns and trends</li>
+                <li><strong>🔄 Investigation Queue</strong> - Building our next reports</li>
             </ul>
         </div>
 
         <div class="cta-box">
             <h3>Want to Be Notified When We Publish?</h3>
             <p style="margin-bottom: 0;">
-                We'll be launching our first investigations soon. Get in touch to stay updated.
+                Get in touch to stay updated on our next investigations.
             </p>
             <a href="contact.html">Contact Us →</a>
         </div>
@@ -272,7 +288,7 @@
             </ul>
         </div>
 
-        <div class="coming-soon" style="margin-top: 3rem;">
+        <div class="status-update" style="margin-top: 3rem;">
             <h2>💡 Have a Tip?</h2>
             <p>
                 If you've witnessed government waste, fraud, abuse, or civil rights violations, 
